@@ -1,0 +1,15 @@
+﻿Product Category ID,Product Category ,Product Subcategory ID,Product Subcategory 
+PC1,Chemicals,20,Cleaning Chemicals
+PC4,Water Solutions,25,Technical Chemicals
+PC4,Water Solutions,30,Water Chemicals
+PC4,Fuel Oil,35,Engine Maintenance Oil
+PC1,Chemicals,40,Ecochemicals
+PC1,Chemicals,45,Cleaning Machines & Accessories
+PC2,Chemicals,50,Tank Chemicals
+PC1,Chemicals,55,Pantry & Berthing
+PC2,Chemicals,60,Cargo Chemicals
+PC1,Maintenance,65,Cylinders
+PC1,Maintenance,70,Coolents
+PC3,Mooring Ropes,75,Ropes
+PC4,Fuel Oil,80,Lub Oil
+PC5,Commodity Chemicals,85,Commodity Chemicals
