@@ -1,0 +1,1 @@
+GRANT ALL PRIVILEGES ON DATABASE "Sales_data" TO postgres;
