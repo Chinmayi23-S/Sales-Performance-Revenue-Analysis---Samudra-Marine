@@ -1,1 +1,176 @@
 ## SALES PERFORMANCE AND REVENUE ANALYSIS
+### 📌Project Overview
+This project is a part of business intelligence case study designed to analyse company sales performance, customer behaviour, product trends, and operational insights. It demonstrates advanced use of BI tools such as **Microsoft Excel, Power BI, DAX, and SQL** to build a board room ready dashboard.
+The report is structured into multiple pages, each focusing on a different aspect of sales performance, with visuals optimized for storytelling and executive decision making.
+
+### 🏢 Company Context 
+**Client Name:** Samudra Marine Supplies Pvt Ltd
+
+
+The Company is a Thane-based distributor of **Marine products**, including chemicals, water treatment solutions, fuel oil, mooring ropes, and maintenance supplies. Through its strong global supply network, the company serves a wide range of customer segments such as ship owners, managers, chandlers, and offshore operators across India & subcontinent.
+
+The Company set a strategic goal of reaching ₹50 Million in revenue by 2025. However, it lacked centralized Business Intelligence(BI) system to effectively monitor performance and support data-driven decision-making.
+Recent performance data(2020-2025) indicated a decline in sales after 2023, with year-on-year growth turning negative in 2025, raising concerns about business sustainability and growth momentum.
+****
+
+### 🎯 Project Objective
+The objective of this project is to analyze historical sales and revenue data to:
+- Identify key trends and inflection point where growth began to decline
+- Highlight performance gaps against ₹50M target
+- Diagnose the root causes of revenue drop across customers, products, and regions
+- Uncover key business risks and inefficiencies affecting profitability
+- Provide data-driven insights and recommendations to support strategic decision-making
+
+### 🛠️ Tools & Technologies
+- ERP- Source Data
+- Excel- Extract source data 
+- Excel Power Query – Data cleaning and transformation.
+- Python - to Load data into PostgreSQL
+- PostgreSQL - creating measures and views
+- DAX – Custom measures and calculations.
+- Power BI Desktop – Data modeling, visualization, and report building.
+
+### Data Preparation & Confidentiality
+
+- Imported data in Excel from the database
+- Cleaned,prepared data in excel power query
+- Analysed data and Created views in PostgreSQL
+- Loaded data and SQL views in Power BI
+- Constructed a snowflake schema tailored for the data model
+- Built interactive dashboards with clear KPIs.
+- Applied DAX measures and calculations for advanced analytics
+- Delivered insights into sales, profit, customers, products etc.
+-	Original dataset contained customer, vessel, port, product, and order details in a single table.
+-	Separated into normalized 11 tables (Orders, Customers, Customers Segment, Vessels, Products, Product Category, Ports, Port Zone, Sales Region, Sales Representative, Country Code) and saved in CSV file to load tables in PostgreSQL
+-	Anonymized sensitive fields (names, codes) while preserving structure and relationships.
+-	Ensured confidentiality without losing analytical value
+
+
+### Loading into PostgreSQL
+-	Each table created in excel saved as separate CSV files 
+-	Python script was used to load data into Postgre to avoid manually creating tables
+-	Connection setup with SQLAlchemy
+-	Loop to load multiple CSVs
+-	Verification in pgAdmin
+
+
+ ### Schema Design
+-	Table relationships:
+-	orders.Customer ID → customers.Customer ID
+-	orders.Product Code → products.Product ID
+-	orders.Port Code → ports.Port Code
+-	orders.Vessel Code → vessels.Vessel Code
+-	orders.SR Code → sales_representative.SR Code
+-   orders.Order Date → dim_date.Date *(Date table created in Power Bi)*
+-	customers.Customers Segment ID → customers_segment.Segment ID
+-	customers.Sales Region ID → sales_region.Region ID
+-	customers.Sales Region ID → sales_region.Region ID
+-   customers.Customer ID → kpi_customer_revenue.Customer ID
+-   customers.Customer ID → kpi_above_avg_sales.Customer ID
+-   customers.Customer ID → kpi_customer_vs_port_zone.Customer ID
+-	products.Product Category ID → product_category.Product Category ID
+-	ports.Zone ID → port_zone.Zone ID
+-	ports.port country code → country_code.Port Country Code
+-   dim_date.Year → Sales_Target.Year *(Target table created in Power BI)*
+-   dim_date.YearMonth → kpi_monthly_revenue_analysis.month 
+![Snowflake Schema.PNG](<attachment:Snowflake Schema.PNG>)
+
+
+### 📊 Key Features of the Report
+
+#### Page 1: Summary
+Provides a high-level overview of the company's performance against its strategic goal.
+- Company Profile and business context
+- Gauge visual to track **50M revenue target vs actual achievement**
+- KPI cards highlighting key metrics such as revenue performance, customer activity, orders, and operational scale
+- Navigation Panel for seamless report exploration
+
+#### Page 2: Executive Overview
+Focuses on revenue performance and growth trends over time.
+- KPI comparison of **Actual vs Target sales**, Target achievement%, and YoY Growth
+- Trend analysis of revenue against targets  
+- Combined view of **Sales vs Net Revenue %**
+- Waterfall analysis to **highlight year-on-year growth drivers and declines**
+
+#### Page 3: Sales Trends
+Tracks short-term and long-term sales patterns.
+- Monthly, quarterly, and rolling average sales trends
+- Growth indicators such as **MoM and QoQ performance**
+- Visuals to detect **seasonality and volatility in sales**
+
+#### Page 4: Customers Drilldown
+Analyzes customer contribution and behavior.
+- Customer-level KPIs Including sales, order valuem, and engagement
+- Pareto analysis to identify **top revenue-contributing customers**
+- Segment-viz contribution to understand dependency risks
+- Year-vize customer sales trends
+ 
+#### Page 5: Products Drilldown
+Evaluates product-level contribution and profitability.
+- Category-viz and product-viz sales distribution
+- Identification of **top-performing and underperforming products**
+- Profitability analysis through **sales vs net revenue relationship**
+
+#### Page 6: Regional & Sales Team Performance
+- Regional sales distribution through map visuals
+- Performance tracking of **sales representative over time**
+- Contribution analysis by region and team members
+
+#### Page 7: Operational Insights
+Provides visibility into operational scale and logistics.
+- Port-level activity and vessel movement insights
+- Order distribution across port zones
+- Customer purchase patterns by location
+
+
+📈 Business Insights
+1.The company set a strategic goal of ₹50M revenue by 2025 and achieved approximately 97% of the target.
+over the years 49 active customers, 1381 vessel served, 22k orders 
+
+2. Clear Inflection Point in 2024. 
+Revenue growth remained strong until 2022, which emerged as the peak performance year.
+Post-2022, year-on-year growth slowed and turned negative by 2025, indicating a shift in business dynamics.
+
+3. We failed to achieve target in 2021 & 2025. Net revenue remained steady due to cost control on COGS.
+Cumulative year on year growth is 23.15%.
+Time-series analysis (MoM, QoQ, rolling averages) shows high volatility maximum revenue in Q1 and steep declined Q4. This suggest seasonality and customer spending cycle due budget allocation. Possible gaps in forecasting or planning.
+
+4. Customer Concentration Risk
+Top 4 customers contribute to ~50% of the revenue
+Decline in sales may be linked to reduced engagement or loss of high-value customers, increasing business risk.
+
+5. Uneven Customer Segment Performance
+Core segments such as ship owners and managers drove the 85% of revenue.
+Limited diversification across segments may have restricted growth opportunities and resilience.
+
+6. Product Performance Imbalance
+A few product categories (Chemicals, water solutions, maintenance) dominated revenue contribution.
+Cryogen 504 is top selling product which also generated highest net revenue. Ecoscale chemical followed suit.
+Ropes product subcategory is second highest selling category probabily due to high selling value
+
+7. Profitability Pressure
+Comparison of sales vs net revenue % suggests that higher sales did not always translate into higher profitability.
+This points to potential issues in pricing strategy, cost control, or discounting practices.
+
+8. Regional & Sales Team Variability
+India consistently outperformed others due to high number of core customers. 
+Underperforming regions are mostly due to non presence of the operations in the region, regional unstability. Explore opportunities for targeted customers, networking, sales strategies and resource optimization.
+sales team performance was consistently strong seeing the sales target pressure as close to achieve target as possible
+
+9. Operational Insights Impacting Revenue
+Port-level analysis shows uneven distribution of orders and vessel activity obviously due to vessel trading patterns. Singapore, Fujairah, and Rotterdam have the highest order volume.
+Some high-activity ports may have contributed to less revenue, indicating missed sales opportunities or inefficiencies.
+
+10. Key Drivers Behind Revenue Decline (2024–2025)
+Over-reliance on limited customers and product categories
+Decline in repeat business from key clients
+Lack of early detection of negative growth trends (pre-BI adoption)
+Possible inefficiencies in regional sales execution and product strategy
+
+11. Strategic Recommendations
+Diversify customer base and product portfolio to reduce dependency risk
+Strengthen customer retention strategies for high-value clients
+Focus on high-performing regions and sales reps while improving low-performing areas
+Optimize pricing and profitability management
+Leverage BI dashboards for proactive monitoring and faster decision-making
+
