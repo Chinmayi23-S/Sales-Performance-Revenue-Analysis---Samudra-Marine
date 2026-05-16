@@ -169,11 +169,11 @@ Possible inefficiencies in regional sales execution and product strategy
 
 ### **Strategic Recommendations**
 - Set a realistic target for 2026 at a level comparable to 2025 to ensure revenue stability first, and then focus on sustainable growth.
--Diversify customer base and product portfolio to reduce dependency risk
--Strengthen customer retention strategies for high-value clients
--Explore opportunities for targeted customers, networking, sales strategies and resource optimization.
--Focus on high-performing regions and sales reps while improving low-performing areas
--Conduct a detailed analysis of low-performing products to assess market demand and identify products for discontinuation. Prioritize   marketing efforts on products with strong consumer demand and growth potential.
--Review product pricing and profitability management
--Leverage BI dashboards for proactive monitoring and faster decision-making
+- Diversify customer base and product portfolio to reduce dependency risk
+- Strengthen customer retention strategies for high-value clients
+- Explore opportunities for targeted customers, networking, sales strategies and resource optimization.
+- Focus on high-performing regions and sales reps while improving low-performing areas
+- Conduct a detailed analysis of low-performing products to assess market demand and identify products for discontinuation. Prioritize   marketing efforts on products with strong consumer demand and growth potential.
+- Review product pricing and profitability management
+- Leverage BI dashboards for proactive monitoring and faster decision-making
 
