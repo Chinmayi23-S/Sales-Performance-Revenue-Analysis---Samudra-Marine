@@ -123,15 +123,15 @@ Provides visibility into operational scale and logistics.
 - Customer purchase patterns by location
 
 
-📈 Business Insights
+### **📈 Business Insights**
 1.The company set a strategic goal of ₹50M revenue by 2025 and achieved approximately 97% of the target.
 over the years 49 active customers, 1381 vessel served, 22k orders 
 
 2. Clear Inflection Point in 2024. 
 Revenue growth remained strong until 2022, which emerged as the peak performance year.
-Post-2022, year-on-year growth slowed and turned negative by 2025, indicating a shift in business dynamics.
+Post-2022, year-on-year growth slowed and turned negative -14.5% by 2025, indicating a shift in business dynamics.
 
-3. We failed to achieve target in 2021 & 2025. Net revenue remained steady due to cost control on COGS.
+3. We failed to achieve target in the years 2021 & 2025. Net revenue remained steady due to cost control on COGS.
 Cumulative year on year growth is 23.15%.
 Time-series analysis (MoM, QoQ, rolling averages) shows high volatility maximum revenue in Q1 and steep declined Q4. This suggest seasonality and customer spending cycle due budget allocation. Possible gaps in forecasting or planning.
 
@@ -145,7 +145,7 @@ Limited diversification across segments may have restricted growth opportunities
 
 6. Product Performance Imbalance
 A few product categories (Chemicals, water solutions, maintenance) dominated revenue contribution.
-Cryogen 504 is top selling product which also generated highest net revenue. Ecoscale chemical followed suit.
+Cryogen 504 is top selling product which also generated highest net revenue ₹2.8 Million. Ecoscale chemical followed suit ₹2.0 Million.
 Ropes product subcategory is second highest selling category probabily due to high selling value
 
 7. Profitability Pressure
@@ -153,9 +153,9 @@ Comparison of sales vs net revenue % suggests that higher sales did not always t
 This points to potential issues in pricing strategy, cost control, or discounting practices.
 
 8. Regional & Sales Team Variability
-India consistently outperformed others due to high number of core customers. 
-Underperforming regions are mostly due to non presence of the operations in the region, regional unstability. Explore opportunities for targeted customers, networking, sales strategies and resource optimization.
-sales team performance was consistently strong seeing the sales target pressure as close to achieve target as possible
+India generated ~92% of the revenue due to high number of core customers (ship managers,  ship owners) - 30 . 
+Underperforming regions are mostly due to non presence of the operations in the region, regional unstability. 
+In the sales team, Vijay Bansal was highest performer generating ~40% of the revenue. Overall team performed consistently strong seeing the sales target pressure as close to achieve target as possible.
 
 9. Operational Insights Impacting Revenue
 Port-level analysis shows uneven distribution of orders and vessel activity obviously due to vessel trading patterns. Singapore, Fujairah, and Rotterdam have the highest order volume.
@@ -167,10 +167,13 @@ Decline in repeat business from key clients
 Lack of early detection of negative growth trends (pre-BI adoption)
 Possible inefficiencies in regional sales execution and product strategy
 
-11. Strategic Recommendations
-Diversify customer base and product portfolio to reduce dependency risk
-Strengthen customer retention strategies for high-value clients
-Focus on high-performing regions and sales reps while improving low-performing areas
-Optimize pricing and profitability management
-Leverage BI dashboards for proactive monitoring and faster decision-making
+### **Strategic Recommendations**
+- Set a realistic target for 2026 at a level comparable to 2025 to ensure revenue stability first, and then focus on sustainable growth.
+-Diversify customer base and product portfolio to reduce dependency risk
+-Strengthen customer retention strategies for high-value clients
+-Explore opportunities for targeted customers, networking, sales strategies and resource optimization.
+-Focus on high-performing regions and sales reps while improving low-performing areas
+-Conduct a detailed analysis of low-performing products to assess market demand and identify products for discontinuation. Prioritize   marketing efforts on products with strong consumer demand and growth potential.
+-Review product pricing and profitability management
+-Leverage BI dashboards for proactive monitoring and faster decision-making
 
