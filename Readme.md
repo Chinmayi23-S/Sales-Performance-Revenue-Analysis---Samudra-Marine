@@ -1,6 +1,7 @@
 ## SALES PERFORMANCE AND REVENUE ANALYSIS
+
 ### 📌Project Overview
-This project is a part of business intelligence case study designed to analyse company sales performance, customer behaviour, product trends, and operational insights. It demonstrates advanced use of BI tools such as **Microsoft Excel, Power BI, DAX, and SQL** to build a board room ready dashboard.
+This project is a part of business intelligence case study designed to analyse company sales performance, customer behaviour, product trends, and operational insights. It demonstrates advanced use of BI tools such as **Microsoft Excel, Power BI, DAX, SQL, Python** to build a board room ready dashboard.
 The report is structured into multiple pages, each focusing on a different aspect of sales performance, with visuals optimized for storytelling and executive decision making.
 
 ### 🏢 Company Context 
@@ -53,6 +54,11 @@ The objective of this project is to analyze historical sales and revenue data to
 -	Loop to load multiple CSVs
 -	Verification in pgAdmin
 
+### Dataset 
+22K orders
+1381 vessels
+590 ports
+49 customers
 
  ### Schema Design
 -	Table relationships:
@@ -124,56 +130,47 @@ Provides visibility into operational scale and logistics.
 
 
 ### **📈 Business Insights**
-1.The company set a strategic goal of ₹50M revenue by 2025 and achieved approximately 97% of the target.
-over the years 49 active customers, 1381 vessel served, 22k orders 
+1. **Revenue & Growth Performance**
+- Revenue grew consistently through 2022, reaching peak business performance with 27% YoY growth.
+- Growth momentum weakened post-2022, resulting in a -14.5% decline by 2025, signaling changing customer demand and reduced repeat business.
+- Despite revenue pressure, net revenue margin remained stable at ~65%, reflecting effective COGS control.
 
-2. Clear Inflection Point in 2024. 
-Revenue growth remained strong until 2022, which emerged as the peak performance year.
-Post-2022, year-on-year growth slowed and turned negative -14.5% by 2025, indicating a shift in business dynamics.
+2. **Customer Risk & Retention**
+- Revenue concentration risk is significant, with top 4 customers contributing nearly 50% of total revenue.
+- Reduced engagement from key accounts appears to be a primary driver of recent sales decline.
+- Heavy dependence on ship owners and ship managers (85% revenue share) limits diversification and business resilience.
 
-3. We failed to achieve target in the years 2021 & 2025. Net revenue remained steady due to cost control on COGS.
-Cumulative year on year growth is 23.15%.
-Time-series analysis (MoM, QoQ, rolling averages) shows high volatility maximum revenue in Q1 and steep declined Q4. This suggest seasonality and customer spending cycle due budget allocation. Possible gaps in forecasting or planning.
+3. **Product & Profitability Analysis**
+- Revenue contribution is heavily concentrated in Chemicals, Water Solutions, and Maintenance categories.
+- Cryogen 504 generated the highest net revenue (~₹2.8M), followed by Ecoscale Chemical (~₹2.0M).
+- Rope products showed high sales value contribution despite lower transaction frequency.
+- Higher sales volumes did not consistently improve profitability, indicating potential pricing inefficiencies or discount pressure.
 
-4. Customer Concentration Risk
-Top 4 customers contribute to ~50% of the revenue
-Decline in sales may be linked to reduced engagement or loss of high-value customers, increasing business risk.
+4. **Regional & Sales Performance**
+- India contributed ~92% of total revenue, supported by concentration of core customer accounts.
+_ Low-performing regions were primarily impacted by limited operational presence and geopolitical instability.
+Sales performance remained relatively balanced across the team, with Vijay Bansal contributing ~40% of overall revenue.
 
-5. Uneven Customer Segment Performance
-Core segments such as ship owners and managers drove the 85% of revenue.
-Limited diversification across segments may have restricted growth opportunities and resilience.
+5. **Operational & Seasonal Insights**
+- Revenue patterns show strong seasonality, with Q1 consistently outperforming and Q4 experiencing significant decline.
+- Time-series analysis revealed high monthly volatility, suggesting gaps in forecasting accuracy and seasonal sales planning.
+- High vessel activity ports such as Singapore, Fujairah, and Rotterdam generated high order volumes but did not always translate into proportional revenue opportunities.
 
-6. Product Performance Imbalance
-A few product categories (Chemicals, water solutions, maintenance) dominated revenue contribution.
-Cryogen 504 is top selling product which also generated highest net revenue ₹2.8 Million. Ecoscale chemical followed suit ₹2.0 Million.
-Ropes product subcategory is second highest selling category probabily due to high selling value
 
-7. Profitability Pressure
-Comparison of sales vs net revenue % suggests that higher sales did not always translate into higher profitability.
-This points to potential issues in pricing strategy, cost control, or discounting practices.
-
-8. Regional & Sales Team Variability
-India generated ~92% of the revenue due to high number of core customers (ship managers,  ship owners) - 30 . 
-Underperforming regions are mostly due to non presence of the operations in the region, regional unstability. 
-In the sales team, Vijay Bansal was highest performer generating ~40% of the revenue. Overall team performed consistently strong seeing the sales target pressure as close to achieve target as possible.
-
-9. Operational Insights Impacting Revenue
-Port-level analysis shows uneven distribution of orders and vessel activity obviously due to vessel trading patterns. Singapore, Fujairah, and Rotterdam have the highest order volume.
-Some high-activity ports may have contributed to less revenue, indicating missed sales opportunities or inefficiencies.
-
-10. Key Drivers Behind Revenue Decline (2024–2025)
+### Key Drivers Behind Revenue Decline (2024–2025)
 Over-reliance on limited customers and product categories
 Decline in repeat business from key clients
 Lack of early detection of negative growth trends (pre-BI adoption)
-Possible inefficiencies in regional sales execution and product strategy
+Possible inefficiencies in regional sales execution and product marketing strategy in low budget seasons
 
 ### **Strategic Recommendations**
 - Set a realistic target for 2026 at a level comparable to 2025 to ensure revenue stability first, and then focus on sustainable growth.
-- Diversify customer base and product portfolio to reduce dependency risk
+- Diversify customer base to reduce dependency risk
 - Strengthen customer retention strategies for high-value clients
 - Explore opportunities for targeted customers, networking, sales strategies and resource optimization.
-- Focus on high-performing regions and sales reps while improving low-performing areas
+- Focus on high-performing regions while improving low-performing areas
+- Motivate low performing sales rep to achieve sales targets
 - Conduct a detailed analysis of low-performing products to assess market demand and identify products for discontinuation. Prioritize   marketing efforts on products with strong consumer demand and growth potential.
 - Review product pricing and profitability management
-- Leverage BI dashboards for proactive monitoring and faster decision-making
+- Leverage BI dashboards for proactively monitoring KPIs on Daily, monthly, quarterly basis.
 
