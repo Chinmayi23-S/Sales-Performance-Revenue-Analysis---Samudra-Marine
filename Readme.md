@@ -54,12 +54,6 @@ The objective of this project is to analyze historical sales and revenue data to
 -	Loop to load multiple CSVs
 -	Verification in pgAdmin
 
-### Dataset 
-22K orders
-1381 vessels
-590 ports
-49 customers
-
  ### Schema Design
 -	Table relationships:
 -	orders.Customer ID → customers.Customer ID
@@ -128,10 +122,15 @@ Provides visibility into operational scale and logistics.
 - Order distribution across port zones
 - Customer purchase patterns by location
 
+### Dataset 
+22K orders
+1381 vessels
+590 ports
+49 customers
 
 ### **📈 Business Insights**
 1. **Revenue & Growth Performance**
-- Revenue grew consistently through 2022, reaching peak business performance with 27% YoY growth.
+- Post Covid, Revenue grew consistently through 2022, reaching peak business performance with 45.32% YoY growth.
 - Growth momentum weakened post-2022, resulting in a -14.5% decline by 2025, signaling changing customer demand and reduced repeat business.
 - Despite revenue pressure, net revenue margin remained stable at ~65%, reflecting effective COGS control.
 
@@ -143,23 +142,22 @@ Provides visibility into operational scale and logistics.
 3. **Product & Profitability Analysis**
 - Revenue contribution is heavily concentrated in Chemicals, Water Solutions, and Maintenance categories.
 - Cryogen 504 generated the highest net revenue (~₹2.8M), followed by Ecoscale Chemical (~₹2.0M).
-- Rope products showed high sales value contribution despite lower transaction frequency.
 - Higher sales volumes did not consistently improve profitability, indicating potential pricing inefficiencies or discount pressure.
 
 4. **Regional & Sales Performance**
 - India contributed ~92% of total revenue, supported by concentration of core customer accounts.
-_ Low-performing regions were primarily impacted by limited operational presence and geopolitical instability.
-Sales performance remained relatively balanced across the team, with Vijay Bansal contributing ~40% of overall revenue.
+- Low-performing regions were primarily impacted by limited operational presence and geopolitical instability.
+- Sales performance remained relatively balanced across the team, with Vijay Bansal contributing ~40% of overall revenue.
 
 5. **Operational & Seasonal Insights**
-- Revenue patterns show strong seasonality, with Q1 consistently outperforming and Q4 experiencing significant decline.
+- Revenue patterns show strong seasonality, with Q1 consistently outperforming and Q4 experiencing sharp decline indicating customer budget cycle and spending behaviour.
 - Time-series analysis revealed high monthly volatility, suggesting gaps in forecasting accuracy and seasonal sales planning.
 - High vessel activity ports such as Singapore, Fujairah, and Rotterdam generated high order volumes but did not always translate into proportional revenue opportunities.
 
 
 ### Key Drivers Behind Revenue Decline (2024–2025)
 Over-reliance on limited customers and product categories
-Decline in repeat business from key clients
+Decline in repeat business from new clients
 Lack of early detection of negative growth trends (pre-BI adoption)
 Possible inefficiencies in regional sales execution and product marketing strategy in low budget seasons
 
